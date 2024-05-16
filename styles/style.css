@@ -92,7 +92,7 @@ button {
 }
 button:hover {
   background-color: antiquewhite;
-  transition: 1s all;
+  transition: 1s all ease-in-out;
 }
 
 p {
