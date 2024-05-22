@@ -4,23 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Teste</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <title>Formulario</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <form>
-      <h1>Login</h1>
-      <div class="inp">
-        <input type="text" placeholder="Username" />
+    <div class="container">
+      <div class="header">
+        <h2>Nova Conta</h2>
       </div>
-      <div class="inp">
-        <input type="password" placeholder="Password" />
-      </div>
-      <a href="" class="esqueceu"> Esqueceu a senha?</a>
-      <button>Entrar</button>
-      <p>Não possui uma conta? <span>registre-se</span></p>
-    </form>
+      <form id="form" class="form">
+        <div class="form-content">
+          <label for="Username">Nome do usuário</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Digite o nome do usuário"
+          />
+          <a>Aqui vai a mensagem de erro</a>
+        </div>
+        <div class="form-content">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Digite seu email" />
+          <a>Aqui vai a mensagem de erro</a>
+        </div>
+        <div class="form-content">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Digite sua senha" />
+          <a>Aqui vai a mensagem de erro</a>
+        </div>
+        <div class="form-content">
+          <label for="password-confirmation">Confirme a senha</label>
+          <input
+            type="password"
+            id="password-confirmation"
+            placeholder="Digite sua senha novamente"
+          />
+          <a>Aqui vai a mensagem de erro</a>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
 
     <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
   </body>
 </html>
